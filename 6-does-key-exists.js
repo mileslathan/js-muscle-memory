@@ -17,13 +17,11 @@ const obj1 = {
 
 
 function doesKeyExist(obj, key) {
- for (let i = 0; i < obj1.length; i++) {
-     if (obj[i].key !== "") {
-         return true;
-     }else {
-         return false;
-     }
- }
+     if (obj[key]) return true;
+     return false;
 }
+
+ 
+
 
 console.log(doesKeyExist(obj1, "name"));
