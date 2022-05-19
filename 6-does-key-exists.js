@@ -10,6 +10,20 @@ doesKeyExist(obj1, 'company'); // => true
 doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
-function doesKeyExist(obj, key) {
-
+const obj1 = {
+    company: "Twitter",
+    location: "who knows"
 }
+
+
+function doesKeyExist(obj, key) {
+ for (let i = 0; i < obj1.length; i++) {
+     if (obj[i].key !== "") {
+         return true;
+     }else {
+         return false;
+     }
+ }
+}
+
+console.log(doesKeyExist(obj1, "name"));
